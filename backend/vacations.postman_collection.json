@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "3027df23-1e11-42cc-9682-d8f29f4a7358",
+		"name": "vacations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20130015"
+	},
+	"item": [
+		{
+			"name": "GET all vacations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one vacation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/vacations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"vacations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Maria\",\r\n    \"lastName\" : \"DB\",\r\n    \"username\": \"Maria\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"username\": \"sivan\",\r\n    \"password\": \"palmtree\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST add new vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"description\": \"See amazing feats of civilization, ancient and modern alike, in this 2,500-year-old metropolis.\",\r\n        \"destination\": \"Rome, Italy\",\r\n        \"imageName\": \"rome.jfif\",\r\n        \"checkIn\": \"2022-11-23T22:00:00.000Z\",\r\n        \"checkOut\": \"2022-11-26T22:00:00.000Z\",\r\n        \"price\": \"90$\",\r\n        \"followersAmount\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT update vacation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"description\": \"See amazing feats of civilization, ancient and modern alike, in this 2,500-year-old metropolis.\",\r\n        \"destination\": \"Rome, Italy\",\r\n        \"imageName\": \"rome.jfif\",\r\n        \"checkIn\": \"2022-11-23T22:00:00.000Z\",\r\n        \"checkOut\": \"2022-11-26T22:00:00.000Z\",\r\n        \"price\": \"1900$\",\r\n        \"followersAmount\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/vacations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"vacations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE vacation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"description\": \"See amazing feats of civilization, ancient and modern alike, in this 2,500-year-old metropolis.\",\r\n        \"destination\": \"Rome, Italy\",\r\n        \"imageName\": \"rome.jfif\",\r\n        \"checkIn\": \"2022-11-23T22:00:00.000Z\",\r\n        \"checkOut\": \"2022-11-26T22:00:00.000Z\",\r\n        \"price\": \"90$\",\r\n        \"followersAmount\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/vacations/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"vacations",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MSwiZmlyc3ROYW1lIjoia2xvZGV0IiwibGFzdE5hbWUiOiJ6YXJmYXRpIiwidXNlcm5hbWUiOiJzaXZhbiIsInBhc3N3b3JkIjoicGFsbXRyZWUifSwiaWF0IjoxNjY5MDMwMzM4LCJleHAiOjE2NjkwNDExMzh9.239kVViz0Ho_FiMvomwoG8fn7ct0TEEGx4sgL6-kJ0k",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

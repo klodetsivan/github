@@ -1,0 +1,57 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  color: rgb(10, 10, 35);
+  background-color: lightblue;
+  background-image: url('../../Frontend/src/Assets/Images/ski.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  background-attachment: fixed;
+}
+
+a {
+  color: rgb(40, 9, 40);
+}
+
+.Box {
+  max-width: 300px;
+  overflow-y: scroll;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  background-color: lightgray;
+  word-wrap: break-word;
+}
+
+form {
+  width: 250px;
+  text-align: left;
+}
+
+form>h2 {
+  text-align: center;
+}
+
+form>input, form>button {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.Error {
+  color: red;
+  margin: 0 20px;
+  position: absolute;
+
+}
+
+button {
+  cursor: pointer;
+}
