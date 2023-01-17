@@ -1,0 +1,18 @@
+.LoginSignup{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member{
+    margin-top: 1.4rem;
+    color: #181515;
+}
+
+h2{
+    font-size: x-large;
+}

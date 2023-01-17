@@ -1,0 +1,84 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  background-color: lightblue;
+  color: rgb(10, 10, 35);
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  background-attachment: fixed;
+}
+a{
+  color: white;
+}
+
+form a {
+  color: rgb(16, 13, 13)
+}
+
+.Box {
+  max-width: 400px;
+  max-height: 600px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+/* form {
+  width: 250px; 
+   text-align: left; 
+} */
+
+form label {
+  text-align: left;
+}
+
+form>h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+form>input {
+  width: 92%;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: #e4e4e4;
+}
+
+.Error {
+  color: red;
+  margin: 0 20px;
+  position: absolute;
+
+}
+
+form button {
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  padding: 10px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 90%;
+  color: white;
+  background: rgba(17, 107, 143);
+}
+
+form button:hover {
+  background: rgba(17, 107, 143, 0.877);
+}
+
+form input:focus {
+  border: 1px solid rgba(192, 192, 192);
+}
